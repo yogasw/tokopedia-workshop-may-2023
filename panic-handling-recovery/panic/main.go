@@ -12,6 +12,7 @@ func secondFunction() {
 	fmt.Println("Second function called")
 
 	// TODO: execute panic to trigger termination of the application
+	panic("Panic in second function")
 
 	fmt.Println("Second function finished") // This should not get called
 }

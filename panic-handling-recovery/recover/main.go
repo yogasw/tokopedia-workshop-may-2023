@@ -8,6 +8,9 @@ func firstFunction() {
 		// Recover from panic to stop termination of the application
 
 		// TODO: setup recover function to recover from a panic
+		if r := recover(); r != nil {
+			fmt.Println("Recovered from panic")
+		}
 	}()
 	fmt.Println("First function called")
 	secondFunction()
